@@ -36,9 +36,6 @@
 ??? question "How do I contribute to octotask?"
     Check out our [Contribution Guide](CONTRIBUTING.md) for more details on how to get involved!
 
-??? question "What are the future plans for octotask?"
-    Visit our [Roadmap](https://roadmap.sh/r/ottodev-roadmap-2ovzo) for the latest updates.  
-    New features and improvements are on the way!
 
 ??? question "Why are there so many open issues/pull requests?"
     octotask began as a small showcase project on @ColeMedin's YouTube channel to explore editing open-source projects with local LLMs. However, it quickly grew into a massive community effort!

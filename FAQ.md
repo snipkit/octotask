@@ -38,13 +38,6 @@ Check out our [Contribution Guide](CONTRIBUTING.md) for more details on how to g
 </details>
 
 <details>
-<summary><strong>What are the future plans for octotask?</strong></summary>
-
-Visit our [Roadmap](https://roadmap.sh/r/ottodev-roadmap-2ovzo) for the latest updates.  
-New features and improvements are on the way!
-</details>
-
-<details>
 <summary><strong>Why are there so many open issues/pull requests?</strong></summary>
 
 octotask began as a small showcase project on @ColeMedin's YouTube channel to explore editing open-source projects with local LLMs. However, it quickly grew into a massive community effort!  

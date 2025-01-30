@@ -1,4 +1,4 @@
-# octotask (Previously oTToDev)
+# octotask
 
 [![octotask: AI-Powered Full-Stack Web Development in the Browser](./public/social_preview_index.jpg)](https://octotask.khulnasoft.com)
 
@@ -282,12 +282,6 @@ Remember to always commit your local changes or stash them before pulling update
 ## Contributing
 
 We welcome contributions! Check out our [Contributing Guide](CONTRIBUTING.md) to get started.
-
----
-
-## Roadmap
-
-Explore upcoming features and priorities on our [Roadmap](https://roadmap.sh/r/ottodev-roadmap-2ovzo).
 
 ---
 
