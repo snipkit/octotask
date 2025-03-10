@@ -121,8 +121,8 @@ export const APIKeyManager: React.FC<APIKeyManagerProps> = ({ provider, apiKey, 
               value={tempKey}
               placeholder="Enter API Key"
               onChange={(e) => setTempKey(e.target.value)}
-              className="w-[300px] px-3 py-1.5 text-sm rounded border border-octotask-elements-borderColor 
-                        bg-octotask-elements-prompt-background text-octotask-elements-textPrimary 
+              className="w-[300px] px-3 py-1.5 text-sm rounded border border-octotask-elements-borderColor
+                        bg-octotask-elements-prompt-background text-octotask-elements-textPrimary
                         focus:outline-none focus:ring-2 focus:ring-octotask-elements-focus"
             />
             <IconButton

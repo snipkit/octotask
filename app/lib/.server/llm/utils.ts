@@ -82,10 +82,10 @@ export function createFilesContext(files: FileMap, useRelativePath?: boolean) {
         filePath = path.replace('/home/project/', '');
       }
 
-      return `<file path="${filePath}">\n${codeWithLinesNumbers}\n</file>`;
+      return `<octotaskAction type="file" filePath="${filePath}">${codeWithLinesNumbers}</octotaskAction>`;
     });
 
-  return `<codebase>${fileContexts.join('\n\n')}\n\n</codebase>`;
+  return `<octotaskArtifact id="code-content" title="Code Content" >\n${fileContexts.join('\n')}\n</octotaskArtifact>`;
 }
 
 export function extractCurrentContext(messages: Message[]) {

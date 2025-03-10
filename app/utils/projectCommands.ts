@@ -35,7 +35,6 @@ export async function detectProjectCommands(files: FileContent[]): Promise<Proje
         return {
           type: 'Node.js',
           setupCommand: `npm install`,
-
           startCommand: `npm run ${availableCommand}`,
           followupMessage: `Found "${availableCommand}" script in package.json. Running "npm run ${availableCommand}" after installation.`,
         };
@@ -81,7 +80,7 @@ export function createCommandsMessage(commands: ProjectCommands): Message | null
 <octotaskAction type="start">${commands.startCommand}</octotaskAction>
 `;
   }
-  
+
   return {
     role: 'assistant',
     content: `

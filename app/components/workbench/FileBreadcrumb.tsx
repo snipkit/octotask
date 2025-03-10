@@ -87,7 +87,9 @@ export const FileBreadcrumb = memo<FileBreadcrumbProps>(({ files, pathSegments =
             <DropdownMenu.Root open={isActive} modal={false}>
               <DropdownMenu.Trigger asChild>
                 <span
-                  ref={(ref) => (segmentRefs.current[index] = ref)}
+                  ref={(ref) => {
+                    segmentRefs.current[index] = ref;
+                  }}
                   className={classNames('flex items-center gap-1.5 cursor-pointer shrink-0', {
                     'text-octotask-elements-textTertiary hover:text-octotask-elements-textPrimary': !isActive,
                     'text-octotask-elements-textPrimary underline': isActive,
