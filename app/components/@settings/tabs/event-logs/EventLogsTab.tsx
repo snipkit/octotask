@@ -512,6 +512,7 @@ export function EventLogsTab() {
       // Add subtitle with octotask
       doc.setFontSize(12);
       doc.setFont('helvetica', 'normal');
+      doc.setTextColor('#374151');
       doc.text('octotask - AI Development Platform', margin, 45);
       yPos = 70;
 
@@ -763,7 +764,7 @@ export function EventLogsTab() {
     {
       id: 'json',
       label: 'Export as JSON',
-      icon: 'i-ph:file-json',
+      icon: 'i-ph:file-js',
       handler: exportAsJSON,
     },
     {

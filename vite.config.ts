@@ -11,6 +11,7 @@ import { join } from 'path';
 
 dotenv.config();
 
+// Get detailed git info with fallbacks
 const getGitInfo = () => {
   try {
     return {
@@ -39,6 +40,7 @@ const getGitInfo = () => {
   }
 };
 
+// Read package.json with detailed dependency info
 const getPackageJson = () => {
   try {
     const pkgPath = join(process.cwd(), 'package.json');
@@ -56,7 +58,7 @@ const getPackageJson = () => {
   } catch {
     return {
       name: 'octotask',
-      description: 'A OctoTask LLM interface',
+      description: 'A DIY LLM interface',
       license: 'MIT',
       dependencies: {},
       devDependencies: {},
@@ -91,32 +93,10 @@ export default defineConfig((config) => {
     },
     build: {
       target: 'esnext',
-      rollupOptions: {
-        output: {
-          format: 'esm',
-        },
-      },
-      commonjsOptions: {
-        transformMixedEsModules: true,
-      },
-    },
-    optimizeDeps: {
-      esbuildOptions: {
-        define: {
-          global: 'globalThis',
-        },
-      },
-    },
-    resolve: {
-      alias: {
-        buffer: 'vite-plugin-node-polyfills/polyfills/buffer',
-        crypto: 'crypto-browserify',
-        stream: 'stream-browserify',
-      },
     },
     plugins: [
       nodePolyfills({
-        include: ['buffer', 'process', 'util', 'stream', 'crypto'],
+        include: ['buffer', 'process', 'util', 'stream'],
         globals: {
           Buffer: true,
           process: true,
@@ -145,6 +125,7 @@ export default defineConfig((config) => {
           v3_relativeSplatPath: true,
           v3_throwAbortReason: true,
           v3_lazyRouteDiscovery: true,
+          v3_singleFetch: true,
         },
       }),
       UnoCSS(),
@@ -182,7 +163,7 @@ function chrome129IssuePlugin() {
           if (version === 129) {
             res.setHeader('content-type', 'text/html');
             res.end(
-              '<body><h1>Please use Chrome Canary for testing.</h1><p>Chrome 129 has an issue with JavaScript modules & Vite local development, see <a href="https://github.com/octotask/octotask/issues/86#issuecomment-2395519258">for more information.</a></p><p><b>Note:</b> This only impacts <u>local development</u>. `pnpm run build` and `pnpm run start` will work fine in this browser.</p></body>',
+              '<body><h1>Please use Chrome Canary for testing.</h1><p>Chrome 129 has an issue with JavaScript modules & Vite local development, see <a href="https://github.com/octotask/octotask.vercel.app/issues/86#issuecomment-2395519258">for more information.</a></p><p><b>Note:</b> This only impacts <u>local development</u>. `pnpm run build` and `pnpm run start` will work fine in this browser.</p></body>',
             );
 
             return;

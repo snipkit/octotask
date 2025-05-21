@@ -1,4 +1,4 @@
-# Welcome to octotask
+# Welcome to bolt diy
 
 octotask allows you to choose the LLM that you use for each prompt! Currently, you can use OpenAI, Anthropic, Ollama, OpenRouter, Gemini, LMStudio, Mistral, xAI, HuggingFace, DeepSeek, or Groq models - and it is easily extended to use any other model supported by the Vercel AI SDK! See the instructions below for running this locally and extending it to include more models.
 
@@ -20,6 +20,14 @@ octotask allows you to choose the LLM that you use for each prompt! Currently, y
 - [Available Scripts](#available-scripts)
 - [Development](#development)
 - [Tips and Tricks](#tips-and-tricks)
+
+---
+
+## Join the community!
+
+[Join the community!](https://khulnasoft.com)
+
+Also [this pinned post in our community](https://khulnasoft.com/t/videos-tutorial-helpful-content/3243) has a bunch of incredible resources for running and deploying octotask yourself!
 
 ---
 
@@ -149,7 +157,7 @@ Once you've configured your keys, the application will be ready to use the selec
    Alternatively, use Docker commands directly:
 
    ```bash
-   docker build . --target octotask-ai-development
+   docker build . --target bolt-ai-development
    ```
 
 2. **Run the Container**:  
@@ -243,10 +251,10 @@ This will start the Remix Vite development server. You will need Google Chrome C
 
 Here are some tips to get the most out of octotask:
 
-- **Be specific about your stack**: If you want to use specific frameworks or libraries (like Astro, Tailwind, ShadCN, or any other popular JavaScript framework), mention them in your initial prompt to ensure Octotask scaffolds the project accordingly.
+- **Be specific about your stack**: If you want to use specific frameworks or libraries (like Astro, Tailwind, ShadCN, or any other popular JavaScript framework), mention them in your initial prompt to ensure Bolt scaffolds the project accordingly.
 
 - **Use the enhance prompt icon**: Before sending your prompt, try clicking the 'enhance' icon to have the AI model help you refine your prompt, then edit the results before submitting.
 
-- **Scaffold the basics first, then add features**: Make sure the basic structure of your application is in place before diving into more advanced functionality. This helps Octotask understand the foundation of your project and ensure everything is wired up right before building out more advanced functionality.
+- **Scaffold the basics first, then add features**: Make sure the basic structure of your application is in place before diving into more advanced functionality. This helps Bolt understand the foundation of your project and ensure everything is wired up right before building out more advanced functionality.
 
-- **Batch simple instructions**: Save time by combining simple instructions into one message. For example, you can ask Octotask to change the color scheme, add mobile responsiveness, and restart the dev server, all in one go saving you time and reducing API credit consumption significantly.
+- **Batch simple instructions**: Save time by combining simple instructions into one message. For example, you can ask Bolt to change the color scheme, add mobile responsiveness, and restart the dev server, all in one go saving you time and reducing API credit consumption significantly.

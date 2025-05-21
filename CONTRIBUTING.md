@@ -1,6 +1,6 @@
 # Contribution Guidelines
 
-Welcome! This guide provides all the details you need to contribute effectively to the project. Thank you for helping us make **octotask** a better tool for developers worldwide. 💡
+Welcome! This guide provides all the details you need to contribute effectively to the project. Thank you for helping us make **bolt.diy** a better tool for developers worldwide. 💡
 
 ---
 
@@ -41,6 +41,8 @@ This project is governed by our **Code of Conduct**. By participating, you agree
 
 ### 3️⃣ Join as a Core Contributor
 
+Interested in maintaining and growing the project? Fill out our [Contributor Application Form](https://forms.gle/TBSteXSDCtBDwr5m7).
+
 ---
 
 ## ✅ Pull Request Guidelines
@@ -78,7 +80,7 @@ This project is governed by our **Code of Conduct**. By participating, you agree
 
 - Clone the repository:
   ```bash
-  git clone https://github.com/octotask/octotask.git
+  git clone https://github.com/stackblitz-labs/bolt.diy.git
   ```
 - Install dependencies:
   ```bash
