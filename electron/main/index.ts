@@ -15,7 +15,7 @@ import { reloadOnChange } from './utils/reload';
 
 Object.assign(console, log.functions);
 
-console.debug('main: import.meta.env:', import.meta.env);
+console.debug('main: process.env:', process.env);
 console.log('main: isDev:', isDev);
 console.log('NODE_ENV:', global.process.env.NODE_ENV);
 console.log('isPackaged:', app.isPackaged);
