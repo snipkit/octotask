@@ -38,7 +38,14 @@
     "electron:build:mac": "rm -rf dist && pnpm electron:build:renderer && pnpm electron:build:deps && electron-builder --mac",
     "electron:build:win": "rm -rf dist && pnpm electron:build:renderer && pnpm electron:build:deps && electron-builder --win",
     "electron:build:linux": "rm -rf dist && pnpm electron:build:renderer && pnpm electron:build:deps && electron-builder --linux",
-    "electron:build:dist": "rm -rf dist && pnpm electron:build:renderer && pnpm electron:build:deps && electron-builder --mwl"
+    "electron:build:dist": "rm -rf dist && pnpm electron:build:renderer && pnpm electron:build:deps && electron-builder --mwl",
+    "deploy": "ts-node scripts/deploy.ts",
+    "deploy:vercel": "vercel",
+    "deploy:vercel:prod": "vercel --prod",
+    "deploy:netlify": "netlify deploy",
+    "deploy:netlify:prod": "netlify deploy --prod",
+    "deploy:cloudflare": "wrangler pages publish .next --branch=preview",
+    "deploy:cloudflare:prod": "wrangler pages publish .next --branch=main"
   },
   "engines": {
     "node": ">=18.18.0"
